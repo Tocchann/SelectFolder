@@ -33,6 +33,8 @@ namespace PickupFolderDialog
 			}
 			m_placeList.Add( value );
 		}
+		private List<string> m_placeList;
+
 		/// <summary>
 		///	ダイアログの表示
 		/// </summary>
@@ -116,8 +118,7 @@ namespace PickupFolderDialog
 			}
 			return false;
 		}
-#region private implements
-		private List<string> m_placeList;
+#region implements native methods
 		/// <summary>
 		/// Win32レベルのオーナーウィンドウの設定(確実にモーダル処理を行うための措置。
 		/// デバッグ実行していて nullptr の場合おかしくなることがあるので要注意
